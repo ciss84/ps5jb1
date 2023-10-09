@@ -7,6 +7,7 @@
 </head>   
 <body>
 	<script>
+document.body.style.backgroundImage = "url('0.jpg')";
 window.applicationCache.ondownloading = function()
 {
 	alert("Caching started !!")
@@ -45,9 +46,9 @@ if(!document.location.href.endswith("/index.html"))
         <a href="#" onclick="changeLanguage('russian'); return false">Русский</a>
     </p>
     <div id="english" class="language" style="display: block">
-        <h3>READ THIS CAREFULLY BEFORE PROCEEDING</h3>
-        <p><b>This exploit loads payloads in PLD (.bin) format on PS5 firmware 4.03. Other firmwares and payload formats are NOT supported.</b></p>
-        <ol>
+        <h3 style="color:white;">READ THIS CAREFULLY BEFORE PROCEEDING</h3>
+        <p style="color:white;"><b>This exploit loads payloads in PLD (.bin) format on PS5 firmware 4.03. Other firmwares and payload formats are NOT supported.</b></p>
+        <ol style="color:white;">
             <li>Click on the link that says JB+NETCAT. In about 20 seconds you'll get a popup saying
                 "waiting for payloads". This means that everything has gone well.
                 You can then send your payload to TCP port 9019.<br />
@@ -63,14 +64,14 @@ if(!document.location.href.endswith("/index.html"))
                 above applies. Note that PS4 homebrews that use direct kernel access (kexec) are not supported and will
                 not work using this payload. You can also download the payload for manual sending <a href="ps5-kstuff.bin">here</a>.</li>
         </ol>
-        <p><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
+        <p style="color:white;"><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
                 jailbreak.</i></p>
-        <p><i>Credits: @theflow for vulnerability disclosure, @ChendoChap for userland CFI bypass, @SpecterDev & @ChendoChap for various help</i></p>
+        <p style="color:white;"><i>Credits: @theflow for vulnerability disclosure, @ChendoChap for userland CFI bypass, @SpecterDev & @ChendoChap for various help</i></p>
     </div>
     <div id="russian" class="language" style="display: none">
-        <h3>ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ИНСТРУКЦИЮ ПРЕЖДЕ ЧЕМ ПРОДОЛЖАТЬ</h3>
-        <p><b>Этот эксплоит загружает пейлоады в формате PLD (.bin) на PS5 с прошивкой 4.03. Другие прошивки и форматы НЕ поддерживаются.</b></p>
-        <ol>
+        <h3 style="color:white;">ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ИНСТРУКЦИЮ ПРЕЖДЕ ЧЕМ ПРОДОЛЖАТЬ</h3>
+        <p style="color:white;"><b>Этот эксплоит загружает пейлоады в формате PLD (.bin) на PS5 с прошивкой 4.03. Другие прошивки и форматы НЕ поддерживаются.</b></p>
+        <ol style="color:white;">
             <li>Нажмите на ссылку &laquo;JB+NETCAT&raquo;. В течение примерно 20 секунд появится уведомление
                 &laquo;waiting for payloads&raquo;. Это значит, что взлом сработал, и вы можете послать
                 пейлоад на TCP-порт 9019.<br />
@@ -85,13 +86,13 @@ if(!document.location.href.endswith("/index.html"))
                 ps5-kstuff. Обратите внимание, что homebrew-приложения, использующие прямой доступ к ядру (kexec), не поддерживаются и работать
                 не будут. Файл пейлоада для ручной отправки можно скачать <a href="ps5-kstuff.bin">здесь</a>.</li>
         </ol>
-        <p><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
-        <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
+        <p style="color:white;"><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
+        <p style="color:white;"><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
     </div>
     <div id="progress"></div>
 
-<a href="netcat.html#payload=henstuff.bin">JB+PS5HEN 1.0</a>	
-<a href="netcat.html#payload=payload.bin">JB+PS5HEN 1.1</a>	
+<a style="color:yellow;" href="netcat.html#payload=henstuff.bin">JB+PS5HEN 1.0</a>	
+<a style="color:yellow;" href="netcat.html#payload=payload.bin">JB+PS5HEN 1.1</a>	
 </center>	
 </body>
 
