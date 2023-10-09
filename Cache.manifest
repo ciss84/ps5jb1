@@ -6,13 +6,9 @@ c-code.js
 exploit.js
 henstuff.bin
 index.html
-malloc.js
 netcat.html
 payload.bin
-rop.js
 sigsegv.js
-syscalls2.js
-syscalls.js
 ps5-kstuff.bin
 
 NETWORK:
