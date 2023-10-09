@@ -32,6 +32,9 @@ function runScripts()
     runJS('exploit.js');
     document.body.setAttribute('bgColor', 'green');
     runJS('malloc.js');
+    runJS('rop.js');
+    runJS('syscalls.js');
+    runJS('syscalls2.js');
     window.sigsegv_handler = infloop_addr;
     runJS('sigsegv.js');
     runJS('c-code.js');
