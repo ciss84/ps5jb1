@@ -28,9 +28,10 @@ function c_code_done(printf_ans, main_ret)
 }
 
 function runScripts()
-{    
-    document.body.setAttribute('bgColor', 'green');
+{   
     runJS('exploit.js');
+    document.body.setAttribute('bgColor', 'green');
+    runJS('malloc.js');
     window.sigsegv_handler = infloop_addr;
     runJS('sigsegv.js');
     runJS('c-code.js');

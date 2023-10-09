@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# 2023-10-08:v10
+# 2023-10-08:v11
 
 CACHE:
 c-code.js
 exploit.js
 henstuff.bin
 index.html
+malloc.js
 netcat.html
 payload.bin
 sigsegv.js
